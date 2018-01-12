@@ -5,7 +5,7 @@
 	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_miguelclaro.png" alt="">
 	                </div>
 	                <div class="col-sm-3">
-	                    <h5>Clínica Miguel Claro</h5>
+	                    <h5>Sedadent</h5>
 	                    <ul>
 	                        <li>Miguel Claro 988 - Providencia, Santiago</li>
 	                        <li>Fono: (56 2) 27140600</li>
