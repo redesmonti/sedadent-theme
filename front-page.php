@@ -35,9 +35,27 @@
     </div>
 
 
+<!-- formulario -->
+	<div class="formulario wow fadeIn">
+		<h2>Pida Información rellenando este formulario</h2>
+		<div class="contenedor-icon">
+			<hr>
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<hr>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Nombre">
+			<input type="text" class="form-control" placeholder="E-mail">
+			<input type="text" class="form-control" placeholder="Clínica">
+			<input type="text" class="form-control" placeholder="Título">
+			<textarea class="form-control" rows="5" id="comment"></textarea>
+			<button> Enviar </button>
+		</div>
+	</div>
+
     <!-- contenedor equipos -->
-    <div class="container-fluid contenedor-equipos wow fadeIn">
-    	<div class="col-md-6 texto-equipos">
+    <div class="container-fluid contenedor-equipos">
+    	<div class="col-md-6 texto-equipos  wow fadeInLeft">
     		<h1>Conozca Nuestros</h1>
     		<h1>Equipos y Accesorios</h1>
     		<h1>de sedación consciente</h1>
@@ -47,5 +65,23 @@
     			<button><i class="fa fa-search" aria-hidden="true"></i> Ver Accesorios</button>
     		</div>
     	</div>
+    	<div class="col-md-6 fotos wow fadeInUp">
+    		
+    	</div>
     </div>
+
+ 	<!-- contenedor conozca más sedación consciente -->
+ 	<div class="container-fluid contenedor-sedacion">
+ 		<div class="col-md-6 imagen"></div>
+ 		<div class="col-md-6 textos wow fadeInRight">
+ 			<h1>Conozca más sobre la</h1>
+ 			<h1>Sedación Consciente</h1>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore eius eligendi nam! Dolorum numquam beatae, facilis vero ab molestias blanditiis cumque repudiandae, libero qui velit tenetur aperiam voluptates eum?</p>
+ 			<button>Leer más</button>
+ 			<div class="iconos">
+ 				<i class="fa fa-heart" aria-hidden="true"></i>
+ 				<i class="fa fa-plus" aria-hidden="true"></i>
+ 			</div>
+ 		</div>
+ 	</div>
 <?php get_footer(); ?>

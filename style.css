@@ -103,14 +103,28 @@ nav.navegacion ul li:hover, nav.navegacion ul li:active {
 button.tel {
     background: transparent;
     border: 1px solid #c5c5c5;
-    border-radius: 4px;
-
+    border-radius: 18px;
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     color: #797979;
+    transition: 0.5s;
 }
-
+button.tel:hover {
+    background: #7bb4a2;
+    border: 1px solid #7bb4a2;
+    border-radius: 18px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    transition: 0.5s;
+}
+button.tel:hover i{
+    background: #fff;
+    color: #7bb4a2;  
+    transition: 0.5s;    
+}
 .zona-contactos {
     background: #eeeeee;
     width: 100%;
@@ -122,10 +136,14 @@ button.tel {
     margin-left: 5px;
     font-size: 12px;
 }
-.tel i{
+
+.tel i {
     background: #c5c5c5;
     padding: 7px;
+    border-radius: 18px 0px 0px 18px;
+    transition: 0.5s;
 }
+
 #navbarjs {
     position: fixed;
     box-shadow: none;
@@ -182,6 +200,50 @@ nav.navegacion ul li a:hover {
 		padding: 10px 35px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 	}
 
+/*   FORMULARIO */
+
+.formulario {
+    width: 310px;
+    position: absolute;
+    top: 16%;
+    z-index: 9;
+    right: 12%;
+    background: #ffffffa8;
+    padding: 2%;
+    text-align: center;
+}
+.formulario h2 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #525252;
+}
+.formulario input {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: none;
+}
+.formulario button {
+    background: #7bb4a2;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+    padding: 3% 42%;
+    margin-top: 5%;
+}
+.contenedor-icon hr {
+    width: 94px;
+    height: 2px;
+    border-style: none;
+    background: #fff;
+    margin-top: 7px;
+}
+.contenedor-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    color: #fff;
+}
 /*      contenedor equipos      */
 .contenedor-equipos {
     padding: 6% 8% 6% 8%;
@@ -229,5 +291,41 @@ nav.navegacion ul li a:hover {
 .contenedor-equipos .texto-equipos button:hover {
     background: #7bb4a2;
     color: #fff;
+    transition: 0.5s;
+}
+
+
+
+/*         sedación consciente conozca más     */
+.container-fluid.contenedor-sedacion {
+    background: #7bb4a2;
+    color: #fff;
+    padding: 6% 8% 6% 8%;
+    overflow: hidden;
+}
+.container-fluid.contenedor-sedacion h1:nth-child(1){
+    font-size: 25px;
+    font-weight: inherit;
+    margin-bottom: 0px;
+}
+.container-fluid.contenedor-sedacion h1:nth-child(2){
+    margin: 0px;
+    font-weight: bold;
+}
+.container-fluid.contenedor-sedacion p{
+    width: 63%; 
+}
+.container-fluid.contenedor-sedacion button{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 6px 28px;
+    color: #fff;
+    margin-top: 5%;
+    transition: 0.5s;  
+}
+.container-fluid.contenedor-sedacion button:hover {
+    background: #fff;
+    color: #7bb4a2;
     transition: 0.5s;
 }
