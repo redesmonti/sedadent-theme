@@ -50,17 +50,53 @@
     </div>
 
 
+<!-- formulario -->
+	<div class="formulario wow fadeIn">
+		<h2>Pida Información rellenando este formulario</h2>
+		<div class="contenedor-icon">
+			<hr>
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<hr>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Nombre">
+			<input type="text" class="form-control" placeholder="E-mail">
+			<input type="text" class="form-control" placeholder="Clínica">
+			<input type="text" class="form-control" placeholder="Título">
+			<textarea class="form-control" rows="5" id="comment"></textarea>
+			<button> Enviar </button>
+		</div>
+	</div>
+
     <!-- contenedor equipos -->
-    <div class="container-fluid contenedor-equipos wow fadeIn">
+    <div class="container-fluid contenedor-equipos">
     	<div class="col-md-6 texto-equipos">
-    		<h1>Conozca Nuestros</h1>
-    		<h1>Equipos y Accesorios</h1>
-    		<h1>de sedación consciente</h1>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident excepturi ut repellat quae fugit illum obcaecati aliquid iste recusandae porro magni, facere quia, dignissimos aspernatur maxime blanditiis expedita commodi qui.</p>
+    		<h1 class="wow fadeInLeft">Conozca Nuestros</h1>
+    		<h1 class="wow fadeInLeft">Equipos y Accesorios</h1>
+    		<h1 class="wow fadeInLeft">de sedación consciente</h1>
+    		<p class="wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident excepturi ut repellat quae fugit illum obcaecati aliquid iste recusandae porro magni, facere quia, dignissimos aspernatur maxime blanditiis expedita commodi qui.</p>
     		<div class="botones">
-    			<button><i class="fa fa-search" aria-hidden="true"></i> Ver Equipos</button>
-    			<button><i class="fa fa-search" aria-hidden="true"></i> Ver Accesorios</button>
+    			<button class="wow fadeInLeft"><i class="fa fa-search" aria-hidden="true"></i> Ver Equipos</button>
+    			<button class="wow fadeInLeft"><i class="fa fa-search" aria-hidden="true"></i> Ver Accesorios</button>
     		</div>
     	</div>
+    	<div class="col-md-6 fotos wow fadeInUp">
+    		
+    	</div>
     </div>
+
+ 	<!-- contenedor conozca más sedación consciente -->
+ 	<div class="container-fluid contenedor-sedacion">
+ 		<div class="col-md-6 imagen"></div>
+ 		<div class="col-md-6 textos">
+ 			<h1 class="wow fadeInRight">Conozca más sobre la</h1>
+ 			<h1 class="wow fadeInRight">Sedación Consciente</h1>
+ 			<p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore eius eligendi nam! Dolorum numquam beatae, facilis vero ab molestias blanditiis cumque repudiandae, libero qui velit tenetur aperiam voluptates eum?</p>
+ 			<button class="wow fadeInRight">Leer más</button>
+ 			<div class="iconos">
+ 				<i class="fa fa-heart" aria-hidden="true"></i>
+ 				<i class="fa fa-plus" aria-hidden="true"></i>
+ 			</div>
+ 		</div>
+ 	</div>
 <?php get_footer(); ?>
