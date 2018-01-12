@@ -212,14 +212,21 @@ nav.navegacion ul li a:hover {
 .contenedor-equipos .texto-equipos p {
     color: #797979;
     width: 63%;
-}.contenedor-equipos .texto-equipos button {
+}
+.contenedor-equipos .texto-equipos button {
     background: transparent;
     border: 1px solid #7bb4a2;
     border-radius: 15px;
     padding: 6px 28px;
     color: #7bb4a2;
     margin-top: 5%;
+    transition: 0.5s;
 }
 .contenedor-equipos .texto-equipos button:nth-child(1) {
     margin-right: 6%;
+}
+.contenedor-equipos .texto-equipos button:hover {
+    background: #7bb4a2;
+    color: #fff;
+    transition: 0.5s;
 }
