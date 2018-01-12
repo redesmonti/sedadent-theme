@@ -36,7 +36,7 @@
 
 
     <!-- contenedor equipos -->
-    <div class="container-fluid contenedor-equipos">
+    <div class="container-fluid contenedor-equipos wow fadeIn">
     	<div class="col-md-6 texto-equipos">
     		<h1>Conozca Nuestros</h1>
     		<h1>Equipos y Accesorios</h1>

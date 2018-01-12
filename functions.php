@@ -7,6 +7,7 @@ function sedadent_styles(){
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstrapjs', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", array('jquery'), true);
+  wp_enqueue_script( 'wow', get_stylesheet_directory_uri() . '/js/wow.min.js', array(), '', true );
 
   //CSS Slider
   wp_enqueue_style('custom-slider', get_stylesheet_directory_uri() . '/css/custom-slider.css');
@@ -20,12 +21,25 @@ function sedadent_styles(){
 
   //Fin Slider
 
+  wp_enqueue_style('animate', get_stylesheet_directory_uri() . '/css/animate.css');
   wp_enqueue_style('slider', get_stylesheet_directory_uri() . '/css/slider.css');
   wp_enqueue_script('jquery');
   wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/css/footer.css');
   wp_enqueue_style('style', get_stylesheet_uri()); //usa el style.css, debe ser la ultima hoja de estilos
 }
 add_action('wp_enqueue_scripts', 'sedadent_styles'); //Hook para llamar al la funcion en wordpress
+
+//* Enqueue script to activate WOW.js
+add_action('wp_enqueue_scripts', 'sk_wow_init_in_footer');
+function sk_wow_init_in_footer() {
+  add_action( 'print_footer_scripts', 'wow_init' );
+}
+//* Add JavaScript before </body>
+function wow_init() { ?>
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
+<?php }
 
 
 //Insertar javascripts
