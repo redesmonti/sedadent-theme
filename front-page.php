@@ -68,9 +68,14 @@
     <!-- contenedor equipos -->
     <div class="container-fluid contenedor-equipos">
     	<div class="col-md-6 texto-equipos">
-    		<p>Conozca Nuestros</p>
+    		<h1>Conozca Nuestros</h1>
     		<h1>Equipos y Accesorios</h1>
-    		 <p>de sedación consciente</p>
+    		<h1>de sedación consciente</h1>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident excepturi ut repellat quae fugit illum obcaecati aliquid iste recusandae porro magni, facere quia, dignissimos aspernatur maxime blanditiis expedita commodi qui.</p>
+    		<div class="botones">
+    			<button><i class="fa fa-search" aria-hidden="true"></i> Ver Equipos</button>
+    			<button><i class="fa fa-search" aria-hidden="true"></i> Ver Accesorios</button>
+    		</div>
     	</div>
     </div>
 <?php get_footer(); ?>
