@@ -40,11 +40,7 @@
 				
 				
 			</div><!-- /sl-slider -->
-=======
-					
-					
-				</div><!-- /sl-slider -->
->>>>>>> 787b814ae4d749b1d6b849790d217c4e901767bf
+
 
 				<nav id="nav-dots" class="nav-dots">
 					<span class="nav-dot-current"></span>
