@@ -20,6 +20,7 @@ function sedadent_styles(){
 
   //Fin Slider
 
+  wp_enqueue_script( 'scrollify', get_stylesheet_directory_uri() . '/js/jquery.scrollify.js', array(), '', true );
   wp_enqueue_script('bootstrapjs', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", array('jquery'), true);
   wp_enqueue_script( 'wow', get_stylesheet_directory_uri() . '/js/wow.min.js', array(), '', true );
 
@@ -42,6 +43,38 @@ function wow_init() { ?>
     new WOW().init();
   </script>
 <?php }
+
+//* Enqueue script to activate scrollify.js
+add_action('wp_enqueue_scripts', 'scrollify_head');
+function scrollify_head() {
+  add_action( 'print_footer_scripts', 'scrollify_init' );
+}
+
+function scrollify_init(){ ?>
+  <script>
+        $(function() {
+          $.scrollify({
+            section : "",
+            sectionName : "scroll",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll:true,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {},
+          });
+        });
+  </script>
+<?php }
+   
 
 
 //Insertar javascripts

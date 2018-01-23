@@ -9,7 +9,7 @@
 	</div>
 
 	<!-- slider pesado -->
-	<section id="slider">
+	<section id="slider" class="scroll">
 	    <div class="container demo-2">
 	        <div id="slider" class="sl-slider-wrapper">
 				<div class="sl-slider">
@@ -73,7 +73,7 @@
 
 
     <!-- contenedor equipos -->
-    <section id="equipos">
+    <section id="equipos" class="scroll">
 	    <div class="container-fluid contenedor-equipos">
 	    	<div class="col-md-6 texto-equipos">
 	    		<h1 class="wow fadeInLeft">Conozca Nuestros</h1>
@@ -93,7 +93,7 @@
 
 
  	<!-- contenedor conozca más sedación consciente -->
- 	<section id="sedacion">
+ 	<section id="sedacion" class="scroll">
 	 	<div class="container-fluid contenedor-sedacion">
 	 		<div class="col-md-6 imagen"></div>
 	 		<div class="col-md-6 textos">
