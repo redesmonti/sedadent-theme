@@ -20,7 +20,6 @@
 							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
 						</div>
 					</div>
-<<<<<<< HEAD
 				</div>
 				<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 					<div class="sl-slide-inner">
@@ -75,7 +74,7 @@
     <!-- contenedor equipos -->
     <section id="equipos" class="scroll">
 	    <div class="container-fluid contenedor-equipos">
-	    	<div class="col-md-6 texto-equipos">
+	    	<div class="col-md-5 texto-equipos">
 	    		<h1 class="wow fadeInLeft">Conozca Nuestros</h1>
 	    		<h1 class="wow fadeInLeft">Equipos y Accesorios</h1>
 	    		<h1 class="wow fadeInLeft">de sedación consciente</h1>
@@ -85,7 +84,27 @@
 	    			<button class="wow fadeInLeft"><i class="fa fa-search" aria-hidden="true"></i> Ver Accesorios</button>
 	    		</div>
 	    	</div>
-	    	<div class="col-md-6 fotos wow fadeInUp">
+	    	<div class="col-md-7 fotos">
+	    		<div class="maquina wow fadeInUp">
+	    			<div class="texto-imagen">
+	    				<h3>Equipos</h3>
+	    			</div>
+	    			<img src="<?php echo get_template_directory_uri(); ?>/assets/equipo_imagen_producto.png" alt="...">
+	    		</div>
+	    		<div>
+	    			<div class="accesorio wow fadeInUp">
+	    			<div class="texto-imagen">
+	    				<h3>Accesorios</h3>
+	    			</div>
+	    			<img src="<?php echo get_template_directory_uri(); ?>/assets/p1_0.png" alt="...">	
+	    		</div>
+	    		<div class="repuestos wow fadeInUp">
+	    			<div class="texto-imagen">
+	    				<h3>Repuestos</h3>
+	    			</div>
+	    			<img src="<?php echo get_template_directory_uri(); ?>/assets/1.jpg" alt="...">
+	    		</div>
+	    		</div>
 	    		
 	    	</div>
 	    </div>
