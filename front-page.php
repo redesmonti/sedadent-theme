@@ -2,55 +2,51 @@
 	<!-- botoneras redes sociales -->
 	<div class="social">
 		<ul>
-			<li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-			<li><a href="http://www.googleplus.com/falconmasters" target="_blank" class="icon-googleplus"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-			<li><a href="mailto:contacto@falconmasters.com" class="icon-mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+			<li><a href="#" target="_blank" class="icon-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+			<li><a href="#" target="_blank" class="icon-googleplus"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+			<li><a href="#" class="icon-mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 		</ul>
 	</div>
 
 	<!-- slider pesado -->
 	<section id="slider" class="scroll">
-	    <div class="container demo-2">
-	        <div id="slider" class="sl-slider-wrapper">
-				<div class="sl-slider">
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-							<h2>A bene placito.</h2>
-							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
-						</div>
-					</div>
-				</div>
-				<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-					<div class="sl-slide-inner">
-						<div class="bg-img bg-img-1"></div>
-						<h2>A bene placito.</h2>
-						<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
-					</div>
-				</div>
-					
-				<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-					<div class="sl-slide-inner">
-						<div class="bg-img bg-img-2"></div>
-						<h2>Regula aurea.</h2>
-						<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
-					</div>
-				</div>
-				
-				
-			</div><!-- /sl-slider -->
-
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-	    </div>
+		<div id="app" class="wrapper" v-cloak v-bind:class="{'is-previous': isPreviousSlide, 'first-load': isFirstLoad}">
+            <div class="slide-wrapper" 
+                 v-on:mouseover="stopRotation"
+         		 v-on:mouseout="startRotation"
+                 v-for="(slide, index) in slides" 
+                 v-bind:class="{ active: index === currentSlide }"
+                 v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
+                <div class="slide-inner">
+                    <div class="slide-bg-text">
+                        <p>{{ slide.headlineFirstLine }}</p>
+                        <p>{{ slide.headlineSecondLine }}</p>
+                    </div>
+                    <div class="slide-rect-filter">
+                        <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
+                    </div>
+                    <div class="slide-content">
+                        <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a class="slide-content-cta">Call To Action</a></div>
+                    <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
+            </div>
+        <div class="controls-container">
+            <button class="controls-button" 
+            		v-on:mouseover="stopRotation"
+         		 	v-on:mouseout="startRotation"
+                    v-for="(slide, index) in slides"
+                    v-bind:class="{ active: index === currentSlide }"
+                    v-on:click="updateSlide(index)">{{ slide.headlineFirstLine }} {{ slide.headlineSecondLine }}</button>
+        </div>
+        <div class="pagination-container">
+            <span class="pagination-item"
+            	  v-on:mouseover="stopRotation"
+         		  v-on:mouseout="startRotation"
+                  v-for="(slide, index) in slides"
+                  v-bind:class="{ active: index === currentSlide }"
+                  v-on:click="updateSlide(index)"></span>
+        </div>
+    </div>
+    
 	<!-- formulario -->
 		<div class="formulario wow fadeIn">
 			<h2>Pida Información rellenando este formulario</h2>
