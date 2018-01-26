@@ -439,6 +439,10 @@ nav.navegacion ul li a:hover {
     transition: 0.5s;
 }
 
+.contenedor-paginas{
+  margin-top: 120px;
+}
+
 /*
 
 ---------------------------------------> S L I D E R <-------------------------------------------
