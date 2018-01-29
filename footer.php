@@ -1,8 +1,8 @@
 		<footer id="myFooter" class="fixed-bottom">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-sm-3">
-	                    <img class="img-footer" src="" alt="">
+	                <div class="col-sm-4">
+	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/assets/logo-blanco.png" alt="">
 	                </div>
 	                <div class="col-sm-3">
 	                    <h5>Sedadent</h5>
