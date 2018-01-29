@@ -413,28 +413,29 @@ nav.navegacion ul li a:hover {
 
 
 /*         sedación consciente conozca más     */
-.container-fluid.contenedor-sedacion {
+#sedacion .container-fluid.contenedor-sedacion {
     background: #7bb4a2;
     color: #fff;
+    padding: 0% 0% 0% 0%;
     overflow: hidden;
 }
-.container-fluid.contenedor-sedacion .textos {
+#sedacion .container-fluid.contenedor-sedacion .textos{
     padding-top: 3%;
     padding-left: 31px;
 }
-.container-fluid.contenedor-sedacion h1:nth-child(1){
+#sedacion .container-fluid.contenedor-sedacion h1:nth-child(1), #normativas .container-fluid.contenedor-normativas h1:nth-child(1){
     font-size: 25px;
     font-weight: inherit;
     margin-bottom: 0px;
 }
-.container-fluid.contenedor-sedacion h1:nth-child(2){
+#sedacion .container-fluid.contenedor-sedacion h1:nth-child(2), #normativas .container-fluid.contenedor-normativas h1:nth-child(2){
     margin: 0px;
     font-weight: bold;
 }
-.container-fluid.contenedor-sedacion p{
+#sedacion .container-fluid.contenedor-sedacion p, #normativas .container-fluid.contenedor-normativas p{
     width: 63%; 
 }
-.container-fluid.contenedor-sedacion button{
+#sedacion .container-fluid.contenedor-sedacion button, #normatitvas .container-fluid.contenedor-normatitvas button{
     background: transparent;
     border: 1px solid #fff;
     border-radius: 15px;
@@ -443,16 +444,16 @@ nav.navegacion ul li a:hover {
     margin-top: 5%;
     transition: 0.5s;  
 }
-.container-fluid.contenedor-sedacion button:hover {
+#sedacion .container-fluid.contenedor-sedacion button:hover, #normativas .container-fluid.contenedor-normativas button:hover {
     background: #fff;
     color: #7bb4a2;
     transition: 0.5s;
 }
 
-.contenedor-paginas{
+#sedacion .contenedor-paginas{
   margin-top: 120px;
 }
-.container-fluid.contenedor-sedacion h1:nth-child(3) {
+#sedacion .container-fluid.contenedor-sedacion h1:nth-child(3), #normativas .container-fluid.contenedor-normativas h1:nth-child(3) {
     background: #fff;
     color: #7bb4a2;
     font-size: 18px;
@@ -460,18 +461,50 @@ nav.navegacion ul li a:hover {
     width: 66%;
     margin-top: 0px;
 }
-.imagen img {
+#sedacion .imagen img {
     width: 103%;
 }
-.imagen {
+#sedacion .imagen {
+    background-image: url(http://localhost/sedadent/wp-content/uploads/2018/01/sedacion.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 414px;
+}
+
+#normativas .imagen {
+    background-image: url(http://localhost/sedadent/wp-content/uploads/2018/01/sedacion.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 414px;
+}
+#normativas .container-fluid.contenedor-normativas {
+    background: #eeeeee;
+    color: #7bb4a2;
+    padding: 0% 0% 0% 0%;
+    overflow: hidden;
+}
+#normativas .container-fluid.contenedor-normativas h1:nth-child(3) {
+    background: #7bb4a2;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 2px;
+    width: 66%;
+    margin-top: 0px;
+}
+#normativas .contenedor-paginas{
+  margin-top: 120px;
+}
+
+#normativas .imagen img {
+    width: 103%;
+}
+#normativas .imagen {
     overflow: hidden;
     height: 379px;
 }
-.container-fluid.contenedor-sedacion {
-    background: #7bb4a2;
-    color: #fff;
-    padding: 0% 8% 0% 0%;
-    overflow: hidden;
+#normativas .container-fluid.contenedor-normativas .textos {
+    padding-top: 3%;
+    padding-left: 7%;
 }
 /*
 
@@ -1332,3 +1365,6 @@ body ::-moz-selection {
           animation-duration: 0.7s;
 }
 
+section#slider {
+    margin-top: 50px;
+}

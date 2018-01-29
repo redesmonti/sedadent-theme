@@ -259,10 +259,9 @@
  	<!-- contenedor conozca más sedación consciente -->
  	<section id="sedacion" class="scroll">
 	 	<div class="container-fluid contenedor-sedacion">
-	 		<div class="col-md-7 imagen wow fadeIn">
-	 			<img src="<?php echo get_template_directory_uri(); ?>/assets/sedacion.png" alt="">
+	 		<div class="col-md-6 imagen wow fadeIn">
 	 		</div>
-	 		<div class="col-md-5 textos">
+	 		<div class="col-md-6 textos">
 	 			<h1 class="wow fadeInRight">Conozca más sobre la</h1>
 	 			<h1 class="wow fadeInRight">Sedación Consciente</h1>
 	 			<h1 class="wow fadeInRight">con Óxido Nitroso y sus beneficios</h1>
@@ -275,9 +274,9 @@
 	 		</div>
 	 	</div> 		
  	</section>
- 	<section id="sedacion" class="scroll">
-	 	<div class="container-fluid contenedor-sedacion">
-	 		<div class="col-md-5 textos">
+ 	<section id="normativas" class="scroll">
+	 	<div class="container-fluid contenedor-normativas">
+	 		<div class="col-md-6 textos">
 	 			<h1 class="wow fadeInRight">Conozca más sobre la</h1>
 	 			<h1 class="wow fadeInRight">Sedación Consciente</h1>
 	 			<h1 class="wow fadeInRight">con Óxido Nitroso y sus beneficios</h1>
@@ -288,8 +287,8 @@
 	 				<i class="fa fa-plus" aria-hidden="true"></i>
 	 			</div>
 	 		</div>
-	 		<div class="col-md-7 imagen wow fadeIn">
-	 			<img src="<?php echo get_template_directory_uri(); ?>/assets/sedacion.png" alt="">
+	 		<div class="col-md-6s imagen wow fadeIn">
+	 			
 	 		</div>
 	 	</div> 		
  	</section>
