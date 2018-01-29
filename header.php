@@ -11,15 +11,15 @@
 <body><!--se cierra en footer.php-->
 	<header class="site-header">
 	    <nav class="navegacion navbar-fixed-top" id="navbarjs" role="navigation">
-			<div class="zona-contactos">
+			<!--<div class="zona-contactos">
 				<button class="tel"><i class="fa fa-phone" aria-hidden="true"></i> <strong>Tel: </strong>  +56 2 2604 74 59</button>
 				<button class="tel"><i class="fa fa-envelope" aria-hidden="true"></i> <strong>Mail:</strong>  contacto@sedadent.cl</button>
-			</div>
+			</div>-->
 	        <div class="container">
 	          <div class="navbar-header"> 
 	            <div class="navbar-brand">
 	              <a href="<?php bloginfo('url'); ?>">
-	              	<h3>LOGO</h3>
+	              	<h3><img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="..."></h3>
 	              </a>  
 	            </div> 
 	            <button type="button" class="navbar-toggle smooth-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 

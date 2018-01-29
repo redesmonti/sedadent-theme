@@ -25,33 +25,35 @@ body {
 --------------------------------------------------------------*/
 
 nav.navegacion {
-	top: 0;
-  	left: 0;
-  	right: 0;
-  	z-index: 10;
-  	background: #fff;
+  top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
 }
 nav.navegacion ul{
-	margin-top: 12px;
+  margin-top: 12px;
 }
 nav.navegacion ul li{
-	/*para los dispositivos moviles*/
-	text-align: center;
-	margin-right: 10px;
+  /*para los dispositivos moviles*/
+  text-align: center;
+  margin-right: 10px;
 
 }
 nav.navegacion ul li a {
-	/* para los enlaces*/
-	color: #fff;
-    transition: 0.3s ease;	
-}
-nav.navegacion ul li a:hover, nav.navegacion ul li a:active,  nav.navegacion ul li a:focus{
-	background:#7bb4a2 ;
+    color: #7bb4a2;
+    font-weight: bold;
+    padding: 13px;
+    padding-bottom: 3px;
+    border-bottom: 10px solid #fff;
     transition: 0.3s ease;
 }
-nav.navegacion ul li:hover, nav.navegacion ul li:active {
-
+nav.navegacion ul li a:hover, nav.navegacion ul li a:active, nav.navegacion ul li a:focus {
+    background: transparent;
+    border-bottom: 10px solid #7bb4a2;
+    transition: 0.3s ease;
 }
+
 #navbarjs {
     position: fixed;
     box-shadow: 1px 1px 7px #00000045;
@@ -73,44 +75,51 @@ nav.navegacion ul li:hover, nav.navegacion ul li:active {
 
 /*codigo para ajustar logo en navbar*/
 .navbar-brand {
-	/*padding 8px ajusta bien para todos los dispositivos*/
-  	padding: 8px;
+  /*padding 8px ajusta bien para todos los dispositivos*/
+    padding: 8px;
 }
 .navbar-brand> a img {
-	  height: 100%;
-	  padding: 1px;
-	  width: auto;
+    width: 145px;
 }
 
 /* para dispositivos moviles*/
-@media (max-width: 780px){
-	
-	nav.navegacion ul li{
-		margin-left: auto;
-    	margin-right:auto;
+@media (min-width: 780px){
+  
+  nav.navegacion ul li{
+    margin-left: auto;
+      margin-right:auto;
 
-	}
-	nav.navegacion{
-		padding: 1px 0;
-		width: 100%;
-		position:absolute;
-		display: block;
-	}
-  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    background: #7bb4a2;
+  }
+  nav.navegacion{
+    padding: 1px 0;
+    width: 100%;
+    position:absolute;
+    display: block;
+  }
 }
+.contenedo-contacto {
+    background: #f7ad51;
+    text-align: right;
+    padding-right: 5%;
 }
-
+.contenedo-contacto a {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+.navbar-brand h3 {
+    margin-top: 0px;
+}
 
 /*                 menu            */
 button.tel {
     background: transparent;
-    border: 1px solid #c5c5c5;
+    border: 1px solid #ffffff;
     border-radius: 18px;
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    color: #797979;
+    color: #fff;
     transition: 0.5s;
 }
 button.tel:hover {
@@ -129,7 +138,7 @@ button.tel:hover i{
     transition: 0.5s;    
 }
 .zona-contactos {
-    background: #eeeeee;
+    background: #7bb4a2;
     width: 100%;
     height: 54px;
     padding: 13px 80px 13px 0px;
@@ -147,28 +156,6 @@ button.tel:hover i{
     transition: 0.5s;
 }
 
-#navbarjs {
-    position: fixed;
-    box-shadow: none;
-    height: 90px;
-    background: #7bb4a2;
-}
-nav.navegacion ul {
-    margin-top: 0px;
-}
-nav.navegacion ul li a {
-    color: #fff;
-    transition: 0.3s ease;
-    padding: 3px 14px;
-    border-top: 6px solid #fff0;
-}
-nav.navegacion ul li a:hover {
-    transition: 0.3s ease;
-    border-top: 6px solid #fff;
-}
-.navbar-brand a h3 {
-    margin-top: 0px;
-}
 
 .social {
 	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
