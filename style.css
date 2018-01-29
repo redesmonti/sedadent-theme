@@ -46,7 +46,7 @@ nav.navegacion ul li a {
     transition: 0.3s ease;	
 }
 nav.navegacion ul li a:hover, nav.navegacion ul li a:active,  nav.navegacion ul li a:focus{
-	background: transparent;
+	background:#7bb4a2 ;
     transition: 0.3s ease;
 }
 nav.navegacion ul li:hover, nav.navegacion ul li:active {
@@ -83,7 +83,7 @@ nav.navegacion ul li:hover, nav.navegacion ul li:active {
 }
 
 /* para dispositivos moviles*/
-@media (min-width: 780px){
+@media (max-width: 780px){
 	
 	nav.navegacion ul li{
 		margin-left: auto;
@@ -96,6 +96,9 @@ nav.navegacion ul li:hover, nav.navegacion ul li:active {
 		position:absolute;
 		display: block;
 	}
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    background: #7bb4a2;
+}
 }
 
 
@@ -213,7 +216,7 @@ nav.navegacion ul li a:hover {
     z-index: 9;
     right: 12%;
     background: #ffffffa8;
-    padding: 2%;
+    padding: 0% 2%;
     text-align: center;
 }
 .formulario h2 {
@@ -233,6 +236,10 @@ nav.navegacion ul li a:hover {
     border-radius: 12px;
     padding: 3% 42%;
     margin-top: 5%;
+    margin-bottom: 12px;
+}
+.form-group {
+    margin-bottom: 7px;
 }
 .contenedor-icon hr {
     width: 94px;
