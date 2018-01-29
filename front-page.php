@@ -259,10 +259,13 @@
  	<!-- contenedor conozca más sedación consciente -->
  	<section id="sedacion" class="scroll">
 	 	<div class="container-fluid contenedor-sedacion">
-	 		<div class="col-md-6 imagen"></div>
-	 		<div class="col-md-6 textos">
+	 		<div class="col-md-7 imagen wow fadeIn">
+	 			<img src="<?php echo get_template_directory_uri(); ?>/assets/sedacion.png" alt="">
+	 		</div>
+	 		<div class="col-md-5 textos">
 	 			<h1 class="wow fadeInRight">Conozca más sobre la</h1>
 	 			<h1 class="wow fadeInRight">Sedación Consciente</h1>
+	 			<h1 class="wow fadeInRight">con Óxido Nitroso y sus beneficios</h1>
 	 			<p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore eius eligendi nam! Dolorum numquam beatae, facilis vero ab molestias blanditiis cumque repudiandae, libero qui velit tenetur aperiam voluptates eum?</p>
 	 			<button class="wow fadeInRight">Leer más</button>
 	 			<div class="iconos">
@@ -272,8 +275,28 @@
 	 		</div>
 	 	</div> 		
  	</section>
-
+ 	<section id="sedacion" class="scroll">
+	 	<div class="container-fluid contenedor-sedacion">
+	 		<div class="col-md-5 textos">
+	 			<h1 class="wow fadeInRight">Conozca más sobre la</h1>
+	 			<h1 class="wow fadeInRight">Sedación Consciente</h1>
+	 			<h1 class="wow fadeInRight">con Óxido Nitroso y sus beneficios</h1>
+	 			<p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore eius eligendi nam! Dolorum numquam beatae, facilis vero ab molestias blanditiis cumque repudiandae, libero qui velit tenetur aperiam voluptates eum?</p>
+	 			<button class="wow fadeInRight">Leer más</button>
+	 			<div class="iconos">
+	 				<i class="fa fa-heart" aria-hidden="true"></i>
+	 				<i class="fa fa-plus" aria-hidden="true"></i>
+	 			</div>
+	 		</div>
+	 		<div class="col-md-7 imagen wow fadeIn">
+	 			<img src="<?php echo get_template_directory_uri(); ?>/assets/sedacion.png" alt="">
+	 		</div>
+	 	</div> 		
+ 	</section>
  	<section id="mapa">
+ 		<div class="info-mapa">
+ 			
+ 		</div>
  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1280659260196!2d-70.60294118480147!3d-33.41990538078271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6b099266c1%3A0x6a106e064621b665!2sHernando+de+Aguirre+194%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1517230099682" frameborder="0" width="100%" height="500" style="border:0" allowfullscreen></iframe>
  	</section>
 

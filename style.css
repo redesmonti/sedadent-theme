@@ -416,8 +416,11 @@ nav.navegacion ul li a:hover {
 .container-fluid.contenedor-sedacion {
     background: #7bb4a2;
     color: #fff;
-    padding: 6% 8% 6% 8%;
     overflow: hidden;
+}
+.container-fluid.contenedor-sedacion .textos {
+    padding-top: 3%;
+    padding-left: 31px;
 }
 .container-fluid.contenedor-sedacion h1:nth-child(1){
     font-size: 25px;
@@ -449,7 +452,27 @@ nav.navegacion ul li a:hover {
 .contenedor-paginas{
   margin-top: 120px;
 }
-
+.container-fluid.contenedor-sedacion h1:nth-child(3) {
+    background: #fff;
+    color: #7bb4a2;
+    font-size: 18px;
+    padding: 2px;
+    width: 66%;
+    margin-top: 0px;
+}
+.imagen img {
+    width: 103%;
+}
+.imagen {
+    overflow: hidden;
+    height: 379px;
+}
+.container-fluid.contenedor-sedacion {
+    background: #7bb4a2;
+    color: #fff;
+    padding: 0% 8% 0% 0%;
+    overflow: hidden;
+}
 /*
 
 ---------------------------------------> S L I D E R <-------------------------------------------
