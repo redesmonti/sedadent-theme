@@ -18,7 +18,7 @@
 	        <div class="container">
 	          <div class="navbar-header"> 
 	            <div class="navbar-brand">
-	              <a href="">
+	              <a href="<?php bloginfo('url'); ?>">
 	              	<h3>LOGO</h3>
 	              </a>  
 	            </div> 

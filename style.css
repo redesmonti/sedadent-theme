@@ -467,12 +467,12 @@ html {
 }
 
 .slide-content-cta, .slide-side-text, .controls-button {
-  font-family: 'Montserrat';
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: .12rem;
-  font-size: .7rem;
-  line-height: 1;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .12rem;
+    font-size: 10px;
+    line-height: 1;
 }
 
 [v-cloak] {
@@ -742,6 +742,7 @@ body ::-moz-selection {
   display: flex;
   bottom: 0;
   right: 0;
+  z-index: 9;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -755,7 +756,7 @@ body ::-moz-selection {
   cursor: pointer;
   background-color: rgba(208, 206, 204, 0.32);
   border: 0;
-  padding: 1.6rem 2.2rem;
+  padding: 5px;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -768,7 +769,6 @@ body ::-moz-selection {
 }
 @media (max-width: 730px) {
   .controls-button {
-    padding: 1.2rem 1.4rem;
     min-width: 13rem;
   }
 }
@@ -780,16 +780,12 @@ body ::-moz-selection {
   cursor: default;
   font-weight: 700;
   background-color: #3b3e45;
-  padding-top: 1.9rem;
-  padding-bottom: 1.9rem;
-  margin-bottom: -0.3rem;
+  padding: 5px;
   position: relative;
 }
 @media (max-width: 730px) {
   .controls-button.active {
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-    margin-bottom: -0.15rem;
+
   }
 }
 .controls-button.active:after {

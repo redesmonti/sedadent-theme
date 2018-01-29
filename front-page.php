@@ -26,7 +26,7 @@
                         <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
                     </div>
                     <div class="slide-content">
-                        <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a class="slide-content-cta">Call To Action</a></div>
+                        <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1></div>
                     <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
             </div>
         <div class="controls-container">
@@ -271,6 +271,10 @@
 	 			</div>
 	 		</div>
 	 	</div> 		
+ 	</section>
+
+ 	<section id="mapa">
+ 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.5560236261526!2d-70.66121198479841!3d-33.53892708074867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da50cad99379%3A0xe4ba99c1b3625a5d!2sAv.+Americo+Vespucio+475%2C+La+Cisterna%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1516372517118" frameborder="0" width="100%" height="500" style="border:0" allowfullscreen></iframe>
  	</section>
 
 <?php get_footer(); ?>

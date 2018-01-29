@@ -6,7 +6,7 @@ Template Name: Sedacion
 <?php get_header(); ?>
 
 <div class="container">
-	<div class="contenedor-especialidades">
+	<div class="contenedor-paginas">
 		<div class="col-md-8 fondo-blanco">
 			<div class="titulo">
 				<h1><?php the_title(); ?></h1>

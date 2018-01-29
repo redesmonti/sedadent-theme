@@ -2,6 +2,9 @@
 /*
 Template Name: Insert data
 */
+
+// Exit if accessed directly
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 ?>
 <?php get_header(); ?>
 <?php
@@ -42,9 +45,15 @@ if ($conn->query($sql) === TRUE) {
     $para = 'carlosmellaneira@gmail.com';
     $asunto = 'Mensaje en la pagina web';
 
-    mail($para, $asunto, utf8_decode($mensaje), $header);
+    mail($para, $asunto, utf8_decode($mensaje), $header);?>
 
-    header('Location:http://testmonti.sedadent.cl/que-es-la-sedacion-consciente-con-oxido-nitroso/');
+    <div class="container">
+    	<div class="contenedor-paginas">
+	    	<h2> Gracias por su mensaje!</h2>
+	    	<h2><a href="http://testmonti.sedadent.cl">Llevame al inicio</a></h2>
+	    </div>
+    </div>
+    <?php
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
