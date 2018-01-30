@@ -79,9 +79,8 @@ nav.navegacion ul li a:hover, nav.navegacion ul li a:active, nav.navegacion ul l
     padding: 8px;
 }
 .navbar-brand> a img {
-    width: 145px;
+    width: 203px;
 }
-
 /* para dispositivos moviles*/
 @media (min-width: 780px){
   

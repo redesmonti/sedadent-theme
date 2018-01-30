@@ -274,24 +274,6 @@
 	 		</div>
 	 	</div> 		
  	</section>
- 	<section id="normativas" class="scroll">
-	 	<div class="container-fluid contenedor-normativas">
-	 		<div class="col-md-6 textos">
-	 			<h1 class="wow fadeInRight">Conozca más sobre la</h1>
-	 			<h1 class="wow fadeInRight">Sedación Consciente</h1>
-	 			<h1 class="wow fadeInRight">con Óxido Nitroso y sus beneficios</h1>
-	 			<p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore eius eligendi nam! Dolorum numquam beatae, facilis vero ab molestias blanditiis cumque repudiandae, libero qui velit tenetur aperiam voluptates eum?</p>
-	 			<button class="wow fadeInRight">Leer más</button>
-	 			<div class="iconos">
-	 				<i class="fa fa-heart" aria-hidden="true"></i>
-	 				<i class="fa fa-plus" aria-hidden="true"></i>
-	 			</div>
-	 		</div>
-	 		<div class="col-md-6s imagen wow fadeIn">
-	 			
-	 		</div>
-	 	</div> 		
- 	</section>
  	<section id="mapa">
  		<div class="info-mapa">
  			
