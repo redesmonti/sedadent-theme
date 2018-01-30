@@ -410,7 +410,7 @@ button.tel:hover i{
 
 /*         sedación consciente conozca más     */
 #sedacion .container-fluid.contenedor-sedacion {
-    background: #7bb4a2;
+    background: #7bb4a2e0;
     color: #fff;
     padding: 0% 0% 0% 0%;
     overflow: hidden;
@@ -462,12 +462,14 @@ button.tel:hover i{
     width: 103%;
 }
 #sedacion .imagen {
+    height: 414px;
+}
+section#sedacion {
     background-image: url(http://localhost/sedadent/wp-content/uploads/2018/01/sedacion.jpg);
     background-size: 100%;
     background-attachment: fixed;
-    height: 414px;
+    background-repeat: no-repeat;
 }
-
 
 /*       index       */
 .justificado-content{
@@ -490,7 +492,7 @@ html {
 }
 
 .slide-content-cta, .slide-side-text, .controls-button {
-    font-family: 'Montserrat';
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: .12rem;
@@ -579,7 +581,7 @@ body ::-moz-selection {
   overflow: hidden;
 }
 .slide-bg-text {
-  font-family: 'Playfair Display';
+  font-family: 'Raleway', sans-serif;
   color: #000;
   font-size: 42vh;
   line-height: .8;
@@ -625,7 +627,7 @@ body ::-moz-selection {
   }
 }
 .slide-content-text {
-  font-family: 'Playfair Display';
+  font-family: 'Raleway', sans-serif;
   font-size: 9rem;
   letter-spacing: .2rem;
   line-height: .87;
@@ -802,7 +804,7 @@ body ::-moz-selection {
 .controls-button.active {
   cursor: default;
   font-weight: 700;
-  background-color: #3b3e45;
+  background-color: #95c7b7;
   padding: 5px;
   position: relative;
 }
@@ -813,7 +815,7 @@ body ::-moz-selection {
 }
 .controls-button.active:after {
   content: "";
-  background-color: #e3e3e3;
+  background-color: ;
   height: 5px;
   width: calc(100% - 8px);
   position: absolute;
@@ -1257,6 +1259,7 @@ body ::-moz-selection {
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+
 }
 .slide-wrapper.active .slide-rect {
   opacity: 0;
