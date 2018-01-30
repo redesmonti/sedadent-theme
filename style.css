@@ -446,6 +446,10 @@ button.tel:hover i{
     transition: 0.5s;
 }
 
+.contenedor-paginas{
+  margin-top: 120px;
+}
+
 #sedacion .contenedor-paginas{
   margin-top: 120px;
 }
@@ -465,7 +469,7 @@ button.tel:hover i{
     height: 414px;
 }
 section#sedacion {
-    background-image: url(http://localhost/sedadent/wp-content/uploads/2018/01/sedacion.jpg);
+    background-image: url(http://testmonti.sedadent.cl/wp-content/uploads/2018/01/sedacion.png);
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;

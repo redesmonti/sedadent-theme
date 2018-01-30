@@ -17,6 +17,7 @@ get_header(); ?>
               $args = array(
                 'post_per_page'=> '5', 
                 'showposts' => '5', //numero de noticias que treara
+                'category_name' => 'accesorios',
                 'paged' => $currentPage ,
                 'orderby' => 'date', 
                 'order' => 'DESC', 

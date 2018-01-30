@@ -229,28 +229,33 @@
 	    			<button class="wow fadeInLeft"><i class="fa fa-search" aria-hidden="true"></i> Ver Accesorios</button>
 	    		</div>
 	    	</div>
-	    	<div class="col-md-7 fotos">
-	    		<div class="maquina wow fadeInUp">
-	    			<div class="texto-imagen">
-	    				<h3>Equipos</h3>
+	    	<div class="col-md-7 col-xs-12">
+	    		<div class="col-md-6">
+					<div class="maquina wow fadeInUp">
+		    			<div class="">
+		    				<h3>Equipos</h3>
+		    			</div>
+		    			<img src="<?php echo get_template_directory_uri(); ?>/assets/equipo_imagen_producto.png" alt="...">
+		    		</div>	    			
+	    		</div>
+	    		<div class="col-md-6">
+	    			<div class="col-md-12">
+	    				<div class="accesorios wow fadeInUp">
+			    			<div class="">
+			    				<h3>Accesorios</h3>
+			    			</div>
+			    			<img src="<?php echo get_template_directory_uri(); ?>/assets/p1_0.png" alt="...">	
+			    		</div>
 	    			</div>
-	    			<img src="<?php echo get_template_directory_uri(); ?>/assets/equipo_imagen_producto.png" alt="...">
-	    		</div>
-	    		<div>
-	    			<div class="accesorio wow fadeInUp">
-	    			<div class="texto-imagen">
-	    				<h3>Accesorios</h3>
+	    			<div class="col-md-12">
+	    				<div class="repuestos wow fadeInUp">
+			    			<div class="">
+			    				<h3>Repuestos</h3>
+			    			</div>
+			    			<img src="<?php echo get_template_directory_uri(); ?>/assets/1.jpg" alt="...">
+			    		</div>
 	    			</div>
-	    			<img src="<?php echo get_template_directory_uri(); ?>/assets/p1_0.png" alt="...">	
-	    		</div>
-	    		<div class="repuestos wow fadeInUp">
-	    			<div class="texto-imagen">
-	    				<h3>Repuestos</h3>
-	    			</div>
-	    			<img src="<?php echo get_template_directory_uri(); ?>/assets/1.jpg" alt="...">
-	    		</div>
-	    		</div>
-	    		
+	    		</div>    		
 	    	</div>
 	    </div>
     </section>
@@ -275,10 +280,7 @@
 	 	</div> 		
  	</section>
  	<section id="mapa">
- 		<div class="info-mapa">
- 			
- 		</div>
- 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1280659260196!2d-70.60294118480147!3d-33.41990538078271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6b099266c1%3A0x6a106e064621b665!2sHernando+de+Aguirre+194%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1517230099682" frameborder="0" width="100%" height="500" style="border:0" allowfullscreen></iframe>
+ 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1280659260196!2d-70.60294118480147!3d-33.41990538078271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6b099266c1%3A0x6a106e064621b665!2sHernando+de+Aguirre+194%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1517230099682" frameborder="0" width="100%" height="340" style="border:0" allowfullscreen></iframe>
  	</section>
 
 <?php get_footer(); ?>
