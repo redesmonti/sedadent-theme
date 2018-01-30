@@ -172,8 +172,8 @@ button.tel:hover i{
 		display: inline-block;
 		color:#fff;
 		background: #000;
-		width: 40px;
-    padding: 12px;
+		width: 52px;
+    padding: 17px;
 		text-decoration: none;
 		-webkit-transition:all 500ms ease;
 		-o-transition:all 500ms ease;
@@ -190,6 +190,9 @@ button.tel:hover i{
 		width: 88px;
     padding-left: 41%; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 	}
+  .fa {
+    font-size: 18px;
+}
 
 /*   FORMULARIO */
 .container.demo-2 {
@@ -436,14 +439,10 @@ button.tel:hover i{
     transition: 0.5s;
 }
 
-.contenedor-paginas{
-  margin-top: 120px;
-}
-
 #sedacion .contenedor-paginas{
   margin-top: 120px;
 }
-#sedacion .container-fluid.contenedor-sedacion h1:nth-child(3), #normativas .container-fluid.contenedor-normativas h1:nth-child(3) {
+#sedacion .container-fluid.contenedor-sedacion h1:nth-child(3){
     background: #fff;
     color: #7bb4a2;
     font-size: 18px;
@@ -451,64 +450,15 @@ button.tel:hover i{
     width: 66%;
     margin-top: 0px;
 }
+
 #sedacion .imagen img {
     width: 103%;
 }
 #sedacion .imagen {
-    background-image: url(http://testmonti.sedadent.cl/wp-content/uploads/2018/01/sedacion.png);
+    background-image: url(http://localhost/sedadent/wp-content/uploads/2018/01/sedacion.jpg);
     background-size: 100%;
     background-attachment: fixed;
     height: 414px;
-}
-
-#normativas .imagen {
-    background-image: url(http://testmonti.sedadent.cl/wp-content/uploads/2018/01/sedacion.png);
-    background-size: 100%;
-    background-attachment: fixed;
-    height: 414px;
-}
-#normativas .container-fluid.contenedor-normativas {
-    background: #eeeeee;
-    color: #7bb4a2;
-    padding: 0% 0% 0% 0%;
-    overflow: hidden;
-}
-#normativas .container-fluid.contenedor-normativas h1:nth-child(3) {
-    background: #7bb4a2;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 2px;
-    width: 66%;
-    margin-top: 0px;
-}
-#normativas .contenedor-paginas{
-  margin-top: 120px;
-}
-
-#normativas .imagen img {
-    width: 103%;
-}
-#normativas .imagen {
-    overflow: hidden;
-    height: 379px;
-}
-#normativas .container-fluid.contenedor-normativas .textos {
-    padding-top: 3%;
-    padding-left: 7%;
-}
-#normativas .container-fluid.contenedor-normativas button{
-    background: transparent;
-    border: 1px solid #7bb4a2;
-    border-radius: 15px;
-    padding: 6px 28px;
-    color: #7bb4a2;
-    margin-top: 5%;
-    transition: 0.5s;  
-}
-#normativas .container-fluid.contenedor-normativas button:hover{
-    background: #7bb4a2;
-    color: #fff;
-    transition: 0.5s;
 }
 
 
