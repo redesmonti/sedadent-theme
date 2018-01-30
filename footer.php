@@ -1,13 +1,13 @@
 		<footer id="myFooter" class="fixed-bottom">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-sm-4">
+	                <div class="col-sm-2">
 	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/assets/logo-blanco.png" alt="">
 	                </div>
 	                <div class="col-sm-3">
 	                    <h5>Sedadent</h5>
 	                    <ul>
-	                        <li>Hernando de Aguirre 194, of 52 Providencia</li>
+	                        <li>Hernando de Aguirre 194, of 52 Providencia, Región Metropolitana</li>
 	                        <li>Fono: +56 2 2604 7459</li>
 	                    </ul>
 	                </div>

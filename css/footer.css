@@ -88,7 +88,10 @@
 #myFooter .twitter:hover {
     color: #00aced;
 }
-
+img.img-footer {
+    width: 134px;
+    margin-top: 5px;
+}
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;

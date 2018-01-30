@@ -11,7 +11,7 @@
             <h1><?php the_title(); ?></h1>
             <hr>
             <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
-            <p><?php the_content(); ?></p>
+            <p class="justificado-content"><?php the_content(); ?></p>
           </div>
           <div class="col-md-12 navegacion-noticias">
             <?php previous_post_link('%link', '<i class="fa fa-arrow-left"></i> Atras '); ?><!--hacia atras-->

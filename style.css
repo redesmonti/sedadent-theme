@@ -16,7 +16,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
    Author's custom styles
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700');
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+}
+p, span, ul, li, a, {
+font-family: 'Open Sans', sans-serif;
+}
 body {
 }
 
@@ -462,8 +469,10 @@ button.tel:hover i{
 }
 
 
-
-
+/*       index       */
+.justificado-content{
+  text-align: justify;
+}
 /*
 
 ---------------------------------------> S L I D E R <-------------------------------------------
