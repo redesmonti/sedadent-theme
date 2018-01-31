@@ -230,30 +230,26 @@
 	    		</div>
 	    	</div>
 	    	<div class="col-md-7 col-xs-12">
-	    		<div class="col-md-6">
+	    		<div class="col-md-6 contenedor-fotos-equipos">
 					<div class="maquina wow fadeInUp">
-		    			<div class="">
+		    			<div class="texto-imagen">
 		    				<h3>Equipos</h3>
 		    			</div>
 		    			<img src="<?php echo get_template_directory_uri(); ?>/assets/equipo_imagen_producto.png" alt="...">
 		    		</div>	    			
 	    		</div>
-	    		<div class="col-md-6">
-	    			<div class="col-md-12">
-	    				<div class="accesorios wow fadeInUp">
-			    			<div class="">
-			    				<h3>Accesorios</h3>
-			    			</div>
-			    			<img src="<?php echo get_template_directory_uri(); ?>/assets/p1_0.png" alt="...">	
-			    		</div>
+	    		<div class="col-md-6 contenedor-fotos-equipos">
+	    			<div class="col-md-12 accesorio wow fadeInUp">
+		    			<div class="texto-imagen">
+		    				<h3>Accesorios</h3>
+		    			</div>
+		    			<img src="<?php echo get_template_directory_uri(); ?>/assets/p1_0.png" alt="...">	
 	    			</div>
-	    			<div class="col-md-12">
-	    				<div class="repuestos wow fadeInUp">
-			    			<div class="">
-			    				<h3>Repuestos</h3>
-			    			</div>
-			    			<img src="<?php echo get_template_directory_uri(); ?>/assets/1.jpg" alt="...">
-			    		</div>
+	    			<div class="col-md-12 repuestos wow fadeInUp">
+		    			<div class="texto-imagen">
+		    				<h3>Repuestos</h3>
+		    			</div>
+		    			<img src="<?php echo get_template_directory_uri(); ?>/assets/1.jpg" alt="...">
 	    			</div>
 	    		</div>    		
 	    	</div>

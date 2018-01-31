@@ -300,114 +300,39 @@ button.tel:hover i{
     color: #fff;
     transition: 0.5s;
 }
-.fotos{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 /* imagenes equipos y accesorios */ 
-.maquina {
-    overflow: hidden;
-    width: 251px;
-    height: 372px;
-    position: relative;
-}
-.maquina img {
+.maquina img, .accesorio img, .repuestos img {
     width: 100%;
 }
-.maquina .texto-imagen{
-    color: #fff;
-    width: 100%;
-    height: 384px;
-    top: 0px;
-    background: #518f92c7;
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s ease;
+.accesorio, .repuestos {
+    padding: 0px;
 }
-.maquina:hover .texto-imagen {
-  opacity: 1;
-    transition: 0.5s ease;
+.contenedor-fotos-equipos{
+  padding: 0px;
 }
-
-.texto-imagen h3 {
-    padding: 72% 32%;
-    transition: 0.5s ease;
+.accesorio .texto-imagen h3{
+    margin: 23% 28%;
 }
-.maquina:hover .texto-imagen h3 {
-    padding: 58% 32%;
-    transition: 0.5s ease;
+.maquina .texto-imagen h3 {
+    margin: 70% 36%;
 }
-
-
-.accesorio {
-    overflow: hidden;
-    width: 352px;
-    height: 186px;
-    position: relative;
-}
-.accesorio img {
-    width: 100%;
-}
-.accesorio .texto-imagen{
-    color: #fff;
-    width: 100%;
-    height: 384px;
-    top: 0px;
-    background: #518f92c7;
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s ease;
-}
-.accesorio:hover .texto-imagen {
-  opacity: 1;
-    transition: 0.5s ease;
-}
-
-.accesorio .texto-imagen h3 {
-    padding: 30% 26%;
-    transition: 0.5s ease;
-}
-.accesorio:hover .texto-imagen h3 {
-    padding: 16% 26%;
-    transition: 0.5s ease;
-}
-
-.repuestos {
-    overflow: hidden;
-    width: 352px;
-    height: 186px;
-    position: relative;
-}
-.repuestos img {
-    width: 100%;
-}
-.repuestos .texto-imagen{
-    color: #fff;
-    width: 100%;
-    height: 384px;
-    top: 0px;
-    background: #518f92c7;
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s ease;
-}
-.repuestos:hover .texto-imagen {
-  opacity: 1;
-    transition: 0.5s ease;
-}
-
 .repuestos .texto-imagen h3 {
-    padding: 30% 26%;
-    transition: 0.5s ease;
+    margin: 23% 28%;
 }
-.repuestos:hover .texto-imagen h3 {
-    padding: 16% 26%;
-    transition: 0.5s ease;
+.accesorio .texto-imagen, .maquina .texto-imagen , .repuestos .texto-imagen {
+    background: #649485b5;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
 }
-
-
-
-
+.accesorio:hover .texto-imagen, .maquina:hover .texto-imagen, .repuestos:hover .texto-imagen {
+  opacity: 1;
+  transition: 0.5s;
+}
 /*         sedación consciente conozca más     */
 #sedacion .container-fluid.contenedor-sedacion {
     background: #7bb4a2e0;
