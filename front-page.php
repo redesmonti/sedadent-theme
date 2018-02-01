@@ -275,6 +275,39 @@
 	 		</div>
 	 	</div> 		
  	</section>
+ 	<section id="testimonios">
+ 		<div class="container-fluid">
+ 		<h1>Experiencia con Óxido Nitroso</h1>
+ 			<div class="col-md-4">
+ 				<div class="tarjeta-testimonio wow fadeInUp">
+ 					<i class="fa fa-quote-left" aria-hidden="true"></i>
+ 					<img src="<?php echo get_template_directory_uri(); ?>/assets/doctor1.png" alt="...">
+ 					<h4>Nombre</h4>
+ 					<hr>
+ 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque perspiciatis consequatur praesentium officia sed laboriosam tempore, id? Soluta, amet libero deleniti minus nam labore sequi praesentium molestias recusandae!</p>
+ 				</div>
+ 			</div>
+ 			<div class="col-md-4">
+ 				<div class="tarjeta-testimonio wow fadeInUp">
+ 					<i class="fa fa-quote-left" aria-hidden="true"></i>
+ 					<img src="<?php echo get_template_directory_uri(); ?>/assets/doctor1.png" alt="...">
+ 					<h4>Nombre</h4>
+ 					<hr>
+ 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque perspiciatis consequatur praesentium officia sed laboriosam tempore, id? Soluta, amet libero deleniti minus nam labore sequi praesentium molestias recusandae!</p>
+ 				</div>
+ 			</div>
+ 			<div class="col-md-4">
+ 				<div class="tarjeta-testimonio wow fadeInUp">
+ 					<i class="fa fa-quote-left" aria-hidden="true"></i>
+ 					<img src="<?php echo get_template_directory_uri(); ?>/assets/doctor1.png" alt="...">
+ 					<h4>Nombre</h4>
+ 					<hr>
+ 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque perspiciatis consequatur praesentium officia sed laboriosam tempore, id? Soluta, amet libero deleniti minus nam labore sequi praesentium molestias recusandae!</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+
  	<section id="mapa">
  			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1280659260196!2d-70.60294118480147!3d-33.41990538078271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6b099266c1%3A0x6a106e064621b665!2sHernando+de+Aguirre+194%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1517230099682" frameborder="0" width="100%" height="340" style="border:0" allowfullscreen></iframe>
  	</section>
