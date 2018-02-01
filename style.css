@@ -76,7 +76,7 @@ nav.navegacion ul li a:hover, nav.navegacion ul li a:active, nav.navegacion ul l
   display: block;
   width: 26px;
   height: 4px;
-  background-color: #2a3073;
+  background-color: #7bb4a2;
   border-radius: 1px;
 }
 
@@ -408,7 +408,7 @@ section#sedacion {
 
 /* ------------------------> Section tetimonios <------------------------------ */
 section#testimonios {
-    background-image: url(http://localhost/sedadent/wp-content/uploads/2018/02/fondo-testimonios.png);
+    background-image: url(http://testmonti.sedadent.cl/wp-content/uploads/2018/02/fondo-testimonios.png);
     background-attachment: fixed;
     background-size: 100%;
 }
@@ -418,6 +418,7 @@ section#testimonios .container-fluid {
 }
 section#testimonios h1 {
     text-align: center;
+    color: #96b8ad;
 }
 .tarjeta-testimonio {
     background: #fff;
