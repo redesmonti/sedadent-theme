@@ -16,10 +16,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
    Author's custom styles
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-weight: 800!important;
 }
 p, span, ul, li, a, {
 font-family: 'Open Sans', sans-serif;
@@ -48,7 +49,7 @@ nav.navegacion ul li{
 
 }
 nav.navegacion ul li a {
-    color: #7bb4a2;
+    color: #5ab6a4;
     font-weight: bold;
     padding: 13px;
     padding-bottom: 3px;
@@ -57,7 +58,7 @@ nav.navegacion ul li a {
 }
 nav.navegacion ul li a:hover, nav.navegacion ul li a:active, nav.navegacion ul li a:focus {
     background: transparent;
-    border-bottom: 10px solid #7bb4a2;
+    border-bottom: 10px solid #5ab6a4;
     transition: 0.3s ease;
 }
 
@@ -76,17 +77,17 @@ nav.navegacion ul li a:hover, nav.navegacion ul li a:active, nav.navegacion ul l
   display: block;
   width: 26px;
   height: 4px;
-  background-color: #7bb4a2;
+  background-color: #5ab6a4;
   border-radius: 1px;
 }
 
 /*codigo para ajustar logo en navbar*/
 .navbar-brand {
   /*padding 8px ajusta bien para todos los dispositivos*/
-    padding: 8px;
+    padding: 0px;
 }
 .navbar-brand> a img {
-    width: 203px;
+    width: 240px;
 }
 /* para dispositivos moviles*/
 @media (min-width: 780px){
@@ -187,11 +188,11 @@ button.tel:hover i{
 		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
 	}
  
-	.social ul li .icon-facebook {background:#95c7b7;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-facebook {background:#5ab6a4;} /* Establecemos los colores de cada red social, aprovechando su class */
 	.social ul li .icon-twitter {background: #00abf0;}
-	.social ul li .icon-googleplus {background: #649485;}
+	.social ul li .icon-googleplus {background: #70ccba;}
 	.social ul li .icon-pinterest {background: #ae181f;}
-	.social ul li .icon-mail {background: #4e7166;}
+	.social ul li .icon-mail {background: #87e2d0;}
  
 	.social ul li a:hover {
 		width: 88px;
@@ -226,7 +227,7 @@ button.tel:hover i{
     border: none;
 }
 .formulario button {
-    background: #7bb4a2;
+    background: #70ccba;
     border: none;
     color: #fff;
     border-radius: 12px;
@@ -254,10 +255,10 @@ button.tel:hover i{
 /*      contenedor equipos      */
 .contenedor-equipos {
     padding: 6% 8% 6% 8%;
-    background: #eeeeee;
+    background: #fbfbfb;
 }
 .contenedor-equipos .texto-equipos h1{
-  color: #7bb4a2;
+  color: #5ab6a4;
 }
 
 .contenedor-equipos .texto-equipos h1:nth-child(1) {
@@ -274,7 +275,7 @@ button.tel:hover i{
     margin-top: 0px;
     color: #ffffff;
     font-weight: inherit;
-    background: #7bb4a2;
+    background: #5ab6a4;
     width: 85%;
     padding-left: 5px;
     margin-top: 3px;
@@ -285,10 +286,10 @@ button.tel:hover i{
 }
 .contenedor-equipos .texto-equipos button {
     background: transparent;
-    border: 1px solid #7bb4a2;
+    border: 1px solid #5ab6a4;
     border-radius: 15px;
     padding: 6px 28px;
-    color: #7bb4a2;
+    color: #5ab6a4;
     margin-top: 5%;
     transition: 0.5s;
 }
@@ -296,7 +297,7 @@ button.tel:hover i{
     margin-right: 6%;
 }
 .contenedor-equipos .texto-equipos button:hover {
-    background: #7bb4a2;
+    background: #5ab6a4;
     color: #fff;
     transition: 0.5s;
 }
@@ -321,7 +322,7 @@ button.tel:hover i{
     margin: 23% 28%;
 }
 .accesorio .texto-imagen, .maquina .texto-imagen , .repuestos .texto-imagen {
-    background: #649485b5;
+    background: #7fcab2b5;
     color: #fff;
     position: absolute;
     width: 100%;
@@ -335,7 +336,7 @@ button.tel:hover i{
 }
 /*         sedación consciente conozca más     */
 #sedacion .container-fluid.contenedor-sedacion {
-    background: #7bb4a2e0;
+    background: #15c7a499;
     color: #fff;
     padding: 0% 0% 0% 0%;
     overflow: hidden;
@@ -439,7 +440,7 @@ section#testimonios h1 {
 }
 .tarjeta-testimonio hr {
     width: 44%;
-    border-bottom: 4px solid #5db7a6;
+    border-bottom: 4px solid #70ccba;
     margin-top: 5px;
         transition: 0.5s;
 }
@@ -457,7 +458,7 @@ section#testimonios i.fa.fa-quote-left {
 }
 
 .tarjeta-testimonio:hover {
-    background: #57b5a3;
+    background: #70ccba;
     color: #fff;
     transition: 0.5s;
 }

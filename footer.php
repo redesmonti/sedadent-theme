@@ -4,13 +4,13 @@
 	                <div class="col-sm-2">
 	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/assets/logo-blanco.png" alt="">
 	                </div>
-	                <div class="col-sm-3">
+	                <div class="col-sm-5">
 	                    <h5>Sedadent</h5>
 	                    <ul>
 	                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Hernando de Aguirre 194, of 52 Providencia, Región Metropolitana</li>
-	                        <li><i class="fa fa-phone" aria-hidden="true"></i> Fono: +56 2 2604 7459</li>
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i> Correo: contacto@sedadent.cl</li>
-                            <li><i class="fa fa-whatsapp"></i> Whatsapp +56 9 4407 2907</li>
+	                        <li><i class="fa fa-phone" aria-hidden="true"></i> +56 2 2604 7459</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>  contacto@sedadent.cl</li>
+                            <li><i class="fa fa-whatsapp"></i>  +56 9 4407 2907</li>
 	                    </ul>
 	                </div>
 	            </div>
