@@ -26,6 +26,7 @@ p, span, ul, li, a, {
 font-family: 'Open Sans', sans-serif;
 }
 body {
+    background: #f7f7f7;
 }
 
 /*--------------------------------------------------------------
@@ -515,7 +516,20 @@ box-sizing: border-box;
 }
 
 
+/*
+--------------------------------------> INDEX <----------------------------------------
+*/
 
+.fondo-blanco {
+    background: #fff;
+    text-align: justify;
+    margin-bottom: 5%;
+    padding: 5% 3%;
+}
+
+.fondo-blanco .titulo h1 {
+    text-align: left;
+}
 
 /*
 

@@ -7,7 +7,7 @@ Template Name: Sedacion
 
 <div class="container">
 	<div class="contenedor-paginas">
-		<div class="col-md-8 fondo-blanco">
+		<div class="col-md-10 fondo-blanco">
 			<div class="titulo">
 				<h1><?php the_title(); ?></h1>
 				<hr>
