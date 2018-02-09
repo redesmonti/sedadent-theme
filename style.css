@@ -418,7 +418,7 @@ section#testimonios .container-fluid {
 }
 section#testimonios h1 {
     text-align: center;
-    color: #96b8ad;
+    color: #60b9a8;
 }
 .tarjeta-testimonio {
     background: #fff;
@@ -466,8 +466,15 @@ section#testimonios i.fa.fa-quote-left {
     transition: 0.5s;
 }
 
-
-
+.info {
+    background: #eeeeee;
+    height: 345px;
+    padding: 6% 4% 6% 6%;
+}
+.iframe-mapa {
+    padding: 0px;
+    height: 345px;
+}
 
 
 

@@ -29,6 +29,13 @@ get_header(); ?>
 				</div><!-- /#content -->
 			<?php endwhile;
 		endif;?>
+		<?php echo do_shortcode( '[contact-form-7 id="64" title="Descargables"]' ); ?>
 	</div>
 </div>
+
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    location = 'http://testmonti.sedadent.cl/wp-content/uploads/2018/01/FICHA_Matrx_Digital_MDM.pdf';
+}, false );
+</script>
 <?php get_footer(); ?>

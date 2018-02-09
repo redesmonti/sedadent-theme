@@ -62,22 +62,6 @@ function my_theme_send_email() {
 
     mail($para, $asunto, utf8_decode($mensaje), $header);
 
-    if (count($reg_errors->get_error_messages()) == 0) {
-      $attachment_location = "http://testmonti.sedadent.cl/wp-content/uploads/2018/01/FICHA_Matrx_Digital_MDM.pdf";
-      if (file_exists($attachment_location)) {
-        header($_SERVER["SERVER_PROTOCOL"] . " 200 OK");
-        header("Cache-Control: public"); // needed for internet explorer
-        header("Content-Type: application/pdf");
-        header("Content-Transfer-Encoding: Binary");
-        header("Content-Length:".filesize($attachment_location));
-        header("Content-Disposition: attachment; filename=FICHA_Matrx_Digital_MDM.pdf");
-        readfile($attachment_location);
-        die();
-      }else {
-        die("Error: No se encontro el archivo.");
-      }
-    }
-    header('Location:http://testmonti.sedadent.cl/manuales-de-uso/');
 
   } // end if
 

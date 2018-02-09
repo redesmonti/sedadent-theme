@@ -9,25 +9,6 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 <?php get_header(); ?>
 <?php
 
-//Datos de la base en Hostinger
-$servername = "localhost";
-$username = "sedadent_monti";
-$password = "seda..2018";
-$dbname = "sedadent_monti";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Fallo la conexión con la base de datos: " . $conn->connect_error);
-}
-
-/*Nuevo tipo Mail*/
-$nombre = $_POST['name'];
-$email = $_POST['email'];
-$contenido = $_POST['content'];
-
-$sql = "INSERT INTO prueba(nombre, email, contenido) 
-VALUES('$nombre','$email','$contenido')";
 
 if ($conn->query($sql) === TRUE) {
     echo "datos enviados correctamente";

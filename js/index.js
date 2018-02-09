@@ -10,15 +10,15 @@ var app = new Vue({
                 headlineSecondLine: "Slider",
                 sublineFirstLine: "Seda",
                 sublineSecondLine: "dent",
-                bgImg: "http://testmonti.sedadent.cl/wp-content/uploads/2018/01/fondo-video.png",
-                rectImg: "https://s27.postimg.org/rgouhim83/slide_rect0.jpg"
+                bgImg: "http://testmonti.sedadent.cl/wp-content/uploads/2018/01/inicio_web.jpg",
+                rectImg: ""
             },
             {
                 headlineFirstLine: "Nulla",
                 headlineSecondLine: "Auctor",
                 sublineFirstLine: "Il n'y a rien de neuf sous",
                 sublineSecondLine: "le soleil",
-                bgImg: "https://s24.postimg.org/3xfyl0zat/slide1.jpg",
+                bgImg: "http://testmonti.sedadent.cl/wp-content/uploads/2018/01/slideabout.jpg",
                 rectImg: "https://s27.postimg.org/r00xg9gib/slide_rect1.jpg"
             },
             {
@@ -26,7 +26,7 @@ var app = new Vue({
                 headlineSecondLine: "Ultricies",
                 sublineFirstLine: "Τίποτα καινούργιο κάτω από",
                 sublineSecondLine: "τον ήλιο",
-                bgImg: "https://s29.postimg.org/80bb1536f/slide2.jpg",
+                bgImg: "http://testmonti.sedadent.cl/wp-content/uploads/2018/01/2.jpg",
                 rectImg: "https://s28.postimg.org/a2i6ateul/slide_rect2.jpg"
             }
         ],
@@ -60,7 +60,7 @@ var app = new Vue({
             this.currentSlide = index;
             this.isFirstLoad = false;
         },
-    startRotation: function() {
+        startRotation: function() {
             this.timer = setInterval(this.next, 4000);
         },
 
