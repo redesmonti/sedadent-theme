@@ -1,10 +1,10 @@
 		<footer id="myFooter" class="fixed-bottom">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-sm-2">
+	                <div class="col-sm-3">
 	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/assets/logo-blanco.png" alt="">
 	                </div>
-	                <div class="col-sm-5">
+	                <div class="col-sm-6">
 	                    <h5>Sedadent</h5>
 	                    <ul>
 	                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Hernando de Aguirre 194, of 52 Providencia, Región Metropolitana</li>
