@@ -33,42 +33,6 @@ function wow_init() { ?>
 <?php }
 
 
-/*Formulario*/
-
-function my_theme_send_email() {
-  global $reg_errors;
-  $reg_errors = new WP_Error;
-
-  /*Nuevo tipo Mail*/
-  $nombre = $_POST['nombre'];
-  $email = $_POST['email'];
-  $contenido = $_POST['content'];
-
-  if ( isset( $_POST['email-submission'] ) && '1' == $_POST['email-submission'] ) {
-
-    //Parte de enviar mail
-    $header = 'From: ' . $email . " \r\n";
-    $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-    $header .= "Mime-Version: 1.0 \r\n";
-    $header .= "Content-Type: text/plain";
-
-    $mensaje = "Este mensaje fue enviado por: " . $nombre . " \r\n";
-    $mensaje .= "Su correo electronico es: " . $email . " \r\n";
-    $mensaje .= "Mensaje: " . $_POST['content'] . " \r\n";
-    $mensaje .= "Enviado el " . date('d/m/Y', time());
-
-    $para = 'carlosmellaneira@gmail.com';
-    $asunto = 'Mensaje en la pagina web';
-
-    mail($para, $asunto, utf8_decode($mensaje), $header);
-
-
-  } // end if
-
-} // end my_theme_send_email
-add_action( 'init', 'my_theme_send_email' );
-
-
 /*Menus*/
 
 require_once('wp-bootstrap-navwalker.php');

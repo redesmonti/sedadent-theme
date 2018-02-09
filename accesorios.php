@@ -34,7 +34,7 @@ get_header(); ?>
                     </div>
                     <div class="info-espacio">
                       <h1 class="titulo"><?php the_title(); ?></h1>
-                      <div class="descripcion"><?php the_content(); ?></div>
+                      <div class="descripcion"><?php the_excerpt(); ?></div>
                       <a href="<?php the_permalink(); ?>" class="btn btn-primary" role="button" aria-pressed="true">Leer más</a>
                     </div>
                        

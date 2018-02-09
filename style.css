@@ -477,7 +477,41 @@ section#testimonios i.fa.fa-quote-left {
 }
 
 
+/*
 
+--------------> CONTACT FORM 7 <-------------------------
+
+*/
+
+.wpcf7-text, .wpcf7-textarea, .wpcf7-captchar {
+background-color: #eee !important;
+border: none !important;
+width: 100% !important;
+-moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+font-size: 14px;
+color: #999 !important;
+padding: 16px !important;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.wpcf7-submit {
+  margin-top: 10px;
+  background: #7bb4a2;
+  border: none;
+  color: #fff;
+  padding: 6px 80px !important; 
+}
+.wpcf7-submit:hover { 
+  margin-top: 10px;
+  background: #fff;
+  border: none;
+  color: #7bb4a2;
+  padding: 6px 80px !important;
+
+}
 
 
 
