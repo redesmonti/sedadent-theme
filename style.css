@@ -1515,6 +1515,7 @@ h1.titulo {
     color: #5ab6a4;
     background: #fff;
     padding: 5px;
+        font-size: 25px;
           transition: 0.5s;
 }
 .space:hover {
@@ -1556,4 +1557,8 @@ h1.titulo {
     margin-top: 5%;
     text-decoration: none;
     transition: 0.5s;
+}
+.imagen img {
+    width: 115px;
+    margin: auto;
 }
