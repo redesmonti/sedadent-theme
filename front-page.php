@@ -1,12 +1,5 @@
 <?php get_header(); ?>
-	<!-- botoneras redes sociales -->
-	<div class="social">
-		<ul>
-			<li><a href="#" target="_blank" class="icon-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-			<li><a href="#" target="_blank" class="icon-googleplus"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-			<li><a href="#" class="icon-mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-		</ul>
-	</div>
+	
 
 	<!-- slider pesado -->
 	<section id="slider" class="scroll">
@@ -91,48 +84,66 @@
 		                  $reg_errors->add("empty-message", "El campo consulta es obligatorio");
 		                }
 		 
-		                //Si no hay errores enviamos el formulario
-		                if (count($reg_errors->get_error_messages()) == 0) {
-		                  //Destinatario
-		                  $recipient = "redes.momti@gmail.com";
-		 
-		                  //Asunto del email
-		                  $subject = 'Formulario de contacto ' . get_bloginfo( 'name' );
-		 
-		                  //La dirección de envio del email es la de nuestro blog por lo que agregando este header podremos responder al remitente original
-		                  $headers = "Reply-to: " . $f_name . " <" . $f_email . ">\r\n";
-		 
-		                  //Montamos el cuerpo de nuestro e-mail
-		                  $message = "Nombre: " . $f_name . "<br>";
-		                  $message .= "E-mail: " . $f_email . "<br>";
-		                  $message .= "Clínica: " . $clinica . "<br>";
-		                  $message .= "Título: " . $titulo . "<br>";
-		                  $message .= "Mensaje: " . nl2br($f_message) . "<br>";
-		                                   
-		                  //Filtro para indicar que email debe ser enviado en modo HTML
-		                  add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
-		                                    
-		                  //Por último enviamos el email
-		                  $envio = wp_mail( $recipient, $subject, $message, $headers, $attachments);
-		 
-		                  //Si el e-mail se envía correctamente mostramos un mensaje y vaciamos las variables con los datos. En caso contrario mostramos un mensaje de error
-		                  if ($envio) {
-		                    unset($f_name);
-		                    unset($f_email);
-		                    unset($clinica);
-		                    unset($titulo);
-		                    unset($f_message);?>
-		                    <div class="alert alert-success alert-dismissable">
-		                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-		                      El formulario ha sido enviado correctamente.
-		                    </div>
-		                  <?php }else {?>
-		                    <div class="alert alert-danger alert-dismissable">
-		                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-		                      Se ha producido un error enviando el formulario. Puede intentarlo más tarde o ponerse en contacto con nosotros escribiendo un mail a "destinatario@email.com"
-		                    </div>
-		                  <?php }
-		                }
+		                if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
+                          //your site secret key
+                          $secret = '6LdDUkQUAAAAAIqH2gwuP9XE3ov8rtwgbvlgi84-';
+                          //get verify response data
+                          $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+                          $responseData = json_decode($verifyResponse);
+                          if($responseData->success){
+                              //Si no hay errores enviamos el formulario
+                              if (count($reg_errors->get_error_messages()) == 0) {
+                                //Destinatario
+                                $recipient = "carlosmellaneira@gmail.com";
+               
+                                //Asunto del email
+                                $subject = 'Formulario de contacto ' . get_bloginfo( 'name' );
+               
+                                //La dirección de envio del email es la de nuestro blog por lo que agregando este header podremos responder al remitente original
+                                $headers = "Reply-to: " . $f_name . " <" . $f_email . ">\r\n";
+               
+                                //Montamos el cuerpo de nuestro e-mail
+                                $message = "Nombre: " . $f_name . "<br>";
+                                $message .= "E-mail: " . $f_email . "<br>";
+                                $message .= "Teléfono: " . $telefono . "<br>";
+                                $message .= "Mensaje: " . nl2br($f_message) . "<br>";
+                                                 
+                                //Filtro para indicar que email debe ser enviado en modo HTML
+                                add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
+                                                  
+                                //Por último enviamos el email
+                                $envio = wp_mail( $recipient, $subject, $message, $headers, $attachments);
+               
+                                //Si el e-mail se envía correctamente mostramos un mensaje y vaciamos las variables con los datos. En caso contrario mostramos un mensaje de error
+                                if ($envio) {
+                                  unset($f_name);
+                                  unset($f_email);
+                                  unset($telefono);
+                                  unset($f_message);?>
+                                  <div class="alert alert-success alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    Su Mensaje a sido enviado con éxito
+                                  </div>
+                                <?php }else {?>
+                                  <div class="alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    Debes comnfirmar que eres un humano rellenado el captcha
+                                  </div>
+                                <?php }
+                              }
+                          }else{
+                                
+                              $errMsg = 'Algo raro paso, por favor intentalo mas tarde';
+                              echo "$errMsg";
+                          }
+                        }else{
+                          ?>
+                            <div class="alert alert-danger alert-dismissable">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                              Debes comnfirmar que eres un humano haciendo click en el captcha.
+                            </div>
+                          <?php
+                          }
 		              }?>
 		 
 		              <div class="form-group">
@@ -209,7 +220,7 @@
 		                  <?php }
 		                }?>
 		              </div>
-		 
+		 			  <div class="g-recaptcha" data-sitekey="6LdDUkQUAAAAAIoj9XjYz9tOXiy0eO-8C5KR6KiM"></div>
 		              <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-default">Enviar</button>
 		            </form>
 		</div>		

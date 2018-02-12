@@ -10,7 +10,7 @@ function sedadent_styles(){
   wp_enqueue_script( 'index', get_stylesheet_directory_uri() . '/js/index.js', array(), '', true );//jquery.slitslider.js
   wp_enqueue_script('vue', "https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js", array('jquery'), true);
   
-  
+  wp_enqueue_script('captcha', "https://www.google.com/recaptcha/api.js", array('jquery'), true);
   wp_enqueue_script('bootstrapjs', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", array('jquery'), true);
   wp_enqueue_script( 'wow', get_stylesheet_directory_uri() . '/js/wow.min.js', array(), '', true );
 

@@ -36,7 +36,7 @@ get_header(); ?>
                 <div class="triangulo"></div>
                   <div class="imagen col-md-6">
                   <h1 class="titulo"><?php the_title(); ?></h1>
-                      <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => 'img-responsive')); }?>
+                      <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
                     </div>
                     <div class="info-espacio col-md-6">
                       

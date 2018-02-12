@@ -42,3 +42,12 @@
 	        </div>        
 	    </nav><!-- fin navegacion-->
 	</header>
+
+<!-- botoneras redes sociales -->
+	<div class="social">
+		<ul>
+			<li><a href="#" target="_blank" class="icon-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+			<li><a href="callto:+56226047459" target="_blank" class="icon-googleplus"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+			<li><a href="mailto:contacto@sedadent.cl" class="icon-mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
