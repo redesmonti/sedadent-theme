@@ -1562,3 +1562,28 @@ h1.titulo {
     width: 115px;
     margin: auto;
 }
+
+
+.contenedor-entradas {
+    margin-top: 6%;
+}
+.fondo-blanco-entradas {
+    background: #fff;
+    box-shadow: 0px 8px 20px #00000024;
+    margin-bottom: 5%;
+    padding: 5%;
+}
+.fondo-blanco-entradas h1 {
+    margin-top: 0px;
+    background: #5ab6a4;
+    color: #fff;
+    padding: 6px;
+}
+
+.justificado-content-entradas label {
+    color: #5ab6a4;
+}
+.justificado-content-entradas {
+    text-align: justify;
+    padding-top: 46px;
+}
