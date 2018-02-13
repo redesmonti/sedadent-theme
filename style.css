@@ -1602,3 +1602,44 @@ h1.titulo {
 .panel-group {
     margin-bottom: 10%;
 }
+
+
+
+.margen{
+    background-image: url(http://localhost/sedadent/wp-content/uploads/2018/02/fondo-contacto.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.formulario-contacto, .pida-info{
+  padding: 127px 90px 50px 90px;
+}
+
+.formulario-contacto {
+    background: #e6e6e6;
+    position: relative;
+}
+
+.pida-info h2 {
+    color: #5ab6a4;
+    margin-bottom: 0px;
+    margin-top: 10%;
+}
+.pida-info h2:nth-child(2) {
+    background: #5ab6a4;
+    color: #fff;
+    padding: 5px;
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+.formulario-contacto .triangulo {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 80px 80px 0 0;
+    border-color: #5ab6a4 transparent transparent transparent;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
