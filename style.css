@@ -1587,3 +1587,18 @@ h1.titulo {
     text-align: justify;
     padding-top: 46px;
 }
+
+
+
+
+
+
+.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    color: #5ab6a4;
+}
+.panel-default>.panel-heading {
+    background-color: #ffffff!important;
+}
+.panel-group {
+    margin-bottom: 10%;
+}
